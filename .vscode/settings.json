@@ -1,0 +1,5 @@
+{
+    "nuxtr.defaultPackageManager": "pnpm",
+    "nuxtr.vueFiles.style.defaultLanguage": "sass",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

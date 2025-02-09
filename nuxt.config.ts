@@ -1,13 +1,19 @@
+import { defineNuxtConfig } from 'nuxt/config'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
   modules: [
-    '@nuxthq/studio'
+    '@nuxt/eslint',
+    '@nuxt/content',
   ],
-  studio: {
-    enabled: true
-  }
-  routeRules: {
-    '/': { prerender: true }
-  }
+
+  devtools: {
+    enabled: true,
+    vscode: {
+      reuseExistingServer: true,
+      port: 3080,
+    },
+  },
+
+  compatibilityDate: '2025-02-09',
 })
