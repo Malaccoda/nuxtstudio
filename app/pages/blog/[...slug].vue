@@ -1,15 +1,21 @@
 <script lang="ts" setup>
 const route = useRoute()
 const { data: post } = await useAsyncData(() => {
+  // post.title?: string 
+  // useSeoMeta({
+  //   title: () => (post as any).title?.value
+    
+  // })
   return queryCollection('blog')
     .path(route.path)
     .first()
-})
+  })
+
 </script>
 
 <template>
   <div v-if="post">
-    <nuxt-link to="/">
+    <nuxt-link to="/blog">
       <small>« Back </small>
     </nuxt-link>
     <h1>{{ post.title }}</h1>

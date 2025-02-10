@@ -8,13 +8,23 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/content',
+    '@nuxtjs/color-mode',
+    '@dargmuesli/nuxt-cookie-control',
+    '@nuxtjs/html-validator',
+    '@nuxt/image',
+    '@nuxt/icon',
   ],
 
   devtools: {
     enabled: true,
+
     vscode: {
       reuseExistingServer: true,
       port: 3080,
+    },
+
+    timeline: {
+      enabled: true,
     },
   },
 
