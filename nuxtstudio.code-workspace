@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"nuxtr.defaultPackageManager": "pnpm",
+		"nuxtr.vueFiles.style.defaultLanguage": "sass"
+	}
+}
